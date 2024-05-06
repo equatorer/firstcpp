@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+
+PROJECT(SOL)
+
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
+
+ADD_EXECUTABLE(mycmakexe main.cpp src/gun.cpp src/sol.cpp)
