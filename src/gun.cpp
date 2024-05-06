@@ -1,16 +1,16 @@
 #include "gun.h"
 #include "iostream"
-using namespaced std;
+using namespace std;
 
-void gun:addBullet(int bcBulletNum){
-    this.bcBulletNum += bcBulletNum;
+void gun::addBullet(int bcBulletNum){
+    this->bcBulletNum += bcBulletNum;
 }
 bool gun::shoot(){
-    if(this.bcBulletNum <= 0){
+    if(this->bcBulletNum <= 0){
         cout << "There is no bullet!" << endl;
         return false;
     }
-    this.bcBulletNum -= 1;
+    this->bcBulletNum -= 1;
     cout << "shoot successful" << endl;
     return true;
 }
