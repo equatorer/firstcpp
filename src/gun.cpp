@@ -11,5 +11,6 @@ bool gun::shoot(){
         return false;
     }
     this.bcBulletNum -= 1;
+    cout << "shoot successful" << endl;
     return true;
 }
